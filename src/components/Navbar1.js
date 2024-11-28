@@ -3,12 +3,12 @@ import { Link, useNavigate } from 'react-router-dom';
 import '../css/Navbar1.css';
 
 const categories = [
-  { name: 'ABOUT US', path: '/' },
+  { name: 'HOME', path: '/' },
   { name: 'STORY', path: '/StoryPage' },
-  { name: 'FRONTPAGE', path: '/frontpage' },
   { name: 'FOOTAGE', path: '/footage' },
   { name: 'TONES', path: '/tones' },
-  { name: 'TALES', path: '/nodge' },
+  { name: 'FRONTPAGE', path: '/frontpage' },
+  // { name: 'TALES', path: '/nodge' },
   { name: 'SHOTS', path: '/shots' },
 ];
 

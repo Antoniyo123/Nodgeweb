@@ -21,7 +21,7 @@ const Shots = () => {
 
   useEffect(() => {
     const resizeGridItems = () => {
-      const grid = document.querySelector('.photo-grid');
+      const grid = document.querySelector('.photo-grid-home');
       const items = grid.querySelectorAll('.photo-item');
       items.forEach(item => {
         const image = item.querySelector('img');
@@ -46,7 +46,7 @@ const Shots = () => {
         </div>
         <button className="view-more-btn-shots" onClick={handleViewMore}>View More Shots</button>
       </div>
-      <div className="photo-grid">
+      <div className="photo-grid-home">
         {previewPhotos.map((photo, index) => (
           <div key={photo.id} className={`photo-item ${index % 6 < 3 ? 'top-row' : 'bottom-row'}`}>
             <img src={photo.image} alt={photo.alt} />
