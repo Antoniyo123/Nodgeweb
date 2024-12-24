@@ -24,11 +24,13 @@ margin-top: -2.3rem;
 }
 
 .page-title {
+  font-family: "Fjalla One", sans-serif;
+
   font-size: 4rem;
 
   font-weight: 600;
   margin-bottom: 40px;
-  letter-spacing: 1px;
+  letter-spacing: 4px;
 }
 
 .page-subtitle {

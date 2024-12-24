@@ -13,6 +13,9 @@
     color: white;
     font-size: 30px;
     text-wrap: wrap;
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 2px;
+
   }
   .article-metadata{
     display: flex;
@@ -22,12 +25,14 @@
     margin-bottom: 20px;
   }
   .article-metadata span{
+    text-decoration: underline;
     color: white;
   }
   .article-text {
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1rem;
+    line-height: 2rem;
     color: #f1ebeb;
+    letter-spacing: 2px;
   }
   
   .article-excerpt {
@@ -38,6 +43,9 @@
   }
   
   .article-full-content p {
+    font-family: "Arimo", sans-serif;
+
+
     text-align: left; /* Menjadikan teks rata kiri */
 
     margin-bottom: 20px;

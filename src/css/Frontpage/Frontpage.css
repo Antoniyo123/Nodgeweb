@@ -10,6 +10,9 @@
 }
 
 .channel-title {
+  font-family: "Fjalla One", sans-serif;
+  letter-spacing: 4.3px;
+
   margin-top: -3rem;
   font-size: 4rem;
   font-weight: bold;
