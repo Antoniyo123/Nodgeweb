@@ -8,76 +8,21 @@ const DocumentaryChannel = () => {
   const documentaries = [
     {
       id: 1,
-      title: "From the Near East to the Far East",
+      title: "Footage ➕ From Jatinangor to Stage: Microgram Journey Through Sound and Vision",
       subtitle: "Celebrating 100 Years of Turkish-Japanese Friendship",
-      thumbnail: require('../img/hero/read-book.jpg'),
+      thumbnail: require('../img/Footage/Foo+tage  Microgram.png'),
       category: "Culture, History",
-      youtubeId: "example1"
+      youtubeId: "E7Hsb7oRq9U"
     },
     {
       id: 2,
-      title: "When Modern Modern Aesthetics Meet Not-So-Modern Anime",
+      title: "Footage ➕ Warung Bolong: Celah Kecil yang Menyambung Harapan",
       subtitle: "Balletcore and Modern Manga",
-      thumbnail: require('../img/hero/read-book.jpg'),
+      thumbnail: require('../img/Footage/Foo+age  Warung Bolong.png'),
       category: "Culture, Art",
-      youtubeId: "example2"
+      youtubeId: "AotPtUwt8KQ"
     },
-    {
-      id: 3,
-      title: "Coffee and Cabinets",
-      subtitle: "London's Hidden Arcade Scene",
-      thumbnail: require('../img/hero/read-book.jpg'),
-      category: "Gaming, Culture",
-      youtubeId: "example3"
-    },
-    {
-      id: 4,
-      title: "From the Near East to the Far East",
-      subtitle: "Celebrating 100 Years of Turkish-Japanese Friendship",
-      thumbnail: require('../img/hero/read-book.jpg'),
-      category: "Culture, History",
-      youtubeId: "example1"
-    },
-    {
-      id: 5,
-      title: "When Modern Modern Aesthetics Meet Not-So-Modern Anime",
-      subtitle: "Balletcore and Modern Manga",
-      thumbnail: require('../img/hero/read-book.jpg'),
-      category: "Culture, Art",
-      youtubeId: "example2"
-    },
-    {
-      id: 6,
-      title: "Coffee and Cabinets",
-      subtitle: "London's Hidden Arcade Scene",
-      thumbnail: require('../img/hero/read-book.jpg'),
-      category: "Gaming, Culture",
-      youtubeId: "example3"
-    },
-    {
-      id: 7,
-      title: "From the Near East to the Far East",
-      subtitle: "Celebrating 100 Years of Turkish-Japanese Friendship",
-      thumbnail: require('../img/hero/read-book.jpg'),
-      category: "Culture, History",
-      youtubeId: "example1"
-    },
-    {
-      id: 8,
-      title: "When Modern Modern Aesthetics Meet Not-So-Modern Anime",
-      subtitle: "Balletcore and Modern Manga",
-      thumbnail: require('../img/hero/read-book.jpg'),
-      category: "Culture, Art",
-      youtubeId: "example2"
-    },
-    {
-      id: 9,
-      title: "Coffee and Cabinets",
-      subtitle: "London's Hidden Arcade Scene",
-      thumbnail: require('../img/hero/read-book.jpg'),
-      category: "Gaming, Culture",
-      youtubeId: "example3"
-    }
+ 
   ];
 
   // Extract unique categories
@@ -103,7 +48,7 @@ const DocumentaryChannel = () => {
     <div className="documentary-container">
       <h1 className="channel-title">Featured FOOTAGE</h1>
       
-      <div className="category-tabs">
+      {/* <div className="category-tabs">
         {allCategories.map((category) => (
           <button
             key={category}
@@ -113,7 +58,7 @@ const DocumentaryChannel = () => {
             {category}
           </button>
         ))}
-      </div>
+      </div> */}
 
       <div className="documentary-grid">
         {filteredDocumentaries.map((doc) => (
@@ -133,9 +78,9 @@ const DocumentaryChannel = () => {
               </div>
             </div>
             <div className="content">
-              <div className="category">{doc.category}</div>
+              {/* <div className="category">{doc.category}</div> */}
               <h2 className="title">{doc.title}</h2>
-              <p className="subtitle">{doc.subtitle}</p>
+              {/* <p className="subtitle">{doc.subtitle}</p> */}
             </div>
           </div>
         ))}
