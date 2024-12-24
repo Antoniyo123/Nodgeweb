@@ -13,6 +13,7 @@ import Nodge from '../src/components/Nodge/NodgePage';
 import Footage from './components/FootageComponent';
 import Tones from './components/Tones';
 import StoryPage from '../src/components/Story/StoryPage';
+import ArticelDetail from '../src/components/Story/ArticelDetail';
 import ShotsPage from '../src/components/Shots/ShotsPage';
 // import Frontpage from '../src/components/Frontpage/Frontpage';
 
@@ -31,6 +32,9 @@ function App() {
         <Route path="/footage" element={<Footage />} />
         <Route path="/tones" element={<Tones />} />
         <Route path="/frontpage" element={<Frontpage />} />
+        <Route path="/story/:id" element={<ArticelDetail />} />
+        <Route path="/stories/*" element={<StoryPage />} />
+
       </Routes>
     </Router>
     {/* <Home/> */}

@@ -1,0 +1,51 @@
+.article-detail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .article-detail-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .article-detail-content h1{
+    color: white;
+  }
+  .article-metadata span{
+    color: white;
+  }
+  .article-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #f1ebeb;
+  }
+  
+  .article-excerpt {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #f0e7e7;
+    margin-bottom: 30px;
+  }
+  
+  .article-full-content p {
+    text-align: left; /* Menjadikan teks rata kiri */
+
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .additional-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .additional-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
