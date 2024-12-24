@@ -18,8 +18,9 @@ const ArticleDetail = ({ articles }) => {
         ← Back
       </button> */}
       <div className="article-detail-content">
-        <h1 className="article-title">{article.headline}</h1>
         <div className="article-metadata">
+        <h1 className="article-title">{article.headline}</h1>
+
           {/* <span className="article-category">{article.category}</span> */}
           <span className="article-date">{article.date}</span>
         </div>

@@ -11,6 +11,15 @@
   }
   .article-detail-content h1{
     color: white;
+    font-size: 30px;
+    text-wrap: wrap;
+  }
+  .article-metadata{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
   }
   .article-metadata span{
     color: white;
