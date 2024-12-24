@@ -1,13 +1,20 @@
 .gallery-container {
+  max-width: 1280px;
 width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 4rem;
   padding-bottom: 120px;
+  
 }
 
 .gallery-header {
+  margin-top: -2rem;
+  display: flex;
   margin-bottom: 2rem;
   text-align: center;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .gallery-header h1 {
@@ -19,7 +26,7 @@ width: 100%;
 
 .gallery-header p {
   color: #f9f5f5;
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 1rem;
 }
 
