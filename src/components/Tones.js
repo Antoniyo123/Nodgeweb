@@ -10,7 +10,7 @@ const DocumentaryChannel = () => {
       id: 1,
       title: "Tones Live ➕ Dongker’s Book Release Supported by Veev",
       subtitle: "Celebrating 100 Years of Turkish-Japanese Friendship",
-      thumbnail: require('../img/Tones/+ones  Dongker.webp'),
+      thumbnail: require('../img/Tones/+onesDongker.webp'),
       category: "Culture, History",
       youtubeId: "zHwPg6RG_Mw"
     },
@@ -18,7 +18,7 @@ const DocumentaryChannel = () => {
       id: 2,
       title: "A deeper understanding of ‘Si Paling Mahir’ by Raisa (Talkshow by Rapot)",
       subtitle: "Balletcore and Modern Manga",
-      thumbnail: require('../img/Tones/+ones  Raisa.webp'),
+      thumbnail: require('../img/Tones/+onesRaisa.webp'),
       category: "Culture, Art",
       youtubeId: "joD7GzhG-p4"
     },
