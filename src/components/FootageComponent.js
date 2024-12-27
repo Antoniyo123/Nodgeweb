@@ -10,7 +10,7 @@ const DocumentaryChannel = () => {
       id: 1,
       title: "Footage ➕ From Jatinangor to Stage: Microgram Journey Through Sound and Vision",
       subtitle: "Celebrating 100 Years of Turkish-Japanese Friendship",
-      thumbnail: require('../img/Footage/Foo+tage  Microgram.png'),
+      thumbnail: require('../img/Footage/Foo+tageMicrogram.png'),
       category: "Culture, History",
       youtubeId: "E7Hsb7oRq9U"
     },
@@ -18,7 +18,7 @@ const DocumentaryChannel = () => {
       id: 2,
       title: "Footage ➕ Warung Bolong: Celah Kecil yang Menyambung Harapan",
       subtitle: "Balletcore and Modern Manga",
-      thumbnail: require('../img/Footage/Foo+age  Warung Bolong.png'),
+      thumbnail: require('../img/Footage/Foo+ageWarungBolong.png'),
       category: "Culture, Art",
       youtubeId: "AotPtUwt8KQ"
     },
