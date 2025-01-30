@@ -28,7 +28,7 @@ const NavBar = () => {
   return (
     <nav className={`navbar ${isMenuOpen ? 'menu-open' : ''}`}>
       <Link to="/" className="navbar-brand" onClick={() => handleNavigation('/')}>
-        <img src={require('../img/hero/NODGE LOGO.png')} alt="Logo" />
+        <img src={require('../img/hero/NODGE LOGO 1.png')} alt="Logo" />
       </Link>
       <button className="hamburger" onClick={toggleMenu}>
         <div className="hamburger-icon-wrapper">

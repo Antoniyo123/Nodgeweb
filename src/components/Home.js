@@ -9,13 +9,15 @@ import HomePage from './HomePage';
 import Brand from './Brand';
 import TalesComponent from './TalesComponent';
 import FootageComponent from'./FootageComponent';
+import StoryPage from '../components/Story/StoryPage';
 
 const Home = () => {
 
   return (
     <div className="home">
         <HomePage/>
-        <TalesComponent/>
+        <StoryPage/>
+        {/* <TalesComponent/> */}
         <Brand/>
       <Shots />
     </div>

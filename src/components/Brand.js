@@ -28,8 +28,8 @@ const ExactLayout = () => {
   ];
 
   const titleImages = [
-    require('../img/hero/story_LOGO.png'),
-    require('../img/hero/+ALES_LOGO.png'),
+    require('../img/hero/FOO+AGE_LOGO.png'),
+    require('../img/hero/forntpage.png'),
     require('../img/hero/tones_LOGO.png'),
   ];
 

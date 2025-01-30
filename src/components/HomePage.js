@@ -21,7 +21,7 @@ const HomePage = () => {
     {
       groupPhoto: microgram,
       profilePhoto: microgram,
-      titleImage: Footage,
+      // titleImage: Footage,
       isSingleVideo: true
     },
   ];
@@ -136,9 +136,9 @@ const HomePage = () => {
                 type="video/mp4"
               />
               <img 
-                src={currentSlideData.titleImage} 
-                className="title-image-bottom-left"
-                alt="Title"
+                src={currentSlideData} 
+                // className="title-image-bottom-left"
+                // alt="Title"
               />
               <div className="comb-overlay"></div>
             </div>

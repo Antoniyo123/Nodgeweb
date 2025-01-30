@@ -103,7 +103,7 @@ const TalesComponent = () => {
         />
         <div className="tales-overlay">
           <div className='footage-custom'>
-            <img src={require('../img/hero/FOO+AGE_LOGO.png')} className=''></img>
+            <img src={require('../img/hero/story_LOGO.png')} className=''></img>
           </div>
           <h2 className="tales-subtitle">LEFT SECTION</h2>
           <h1 className="tales-title">First Story</h1>
@@ -130,7 +130,7 @@ const TalesComponent = () => {
         />
         <div className="tales-overlay">
           <div className='footage-custom'>
-            <img src={require('../img/hero/forntpage.png')} className=''></img>
+            <img src={require('../img/hero/story_LOGO.png')} className=''></img>
           </div>
           <h2 className="tales-subtitle">RIGHT SECTION</h2>
           <h1 className="tales-title">Second Story</h1>

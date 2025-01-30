@@ -1,197 +1,246 @@
-.story__container{
-  margin: 0 auto;
-  max-width: 1400px;
-width: 100%;
-height: 100%;
-background-color: #0b0b0b;
-padding: 5.2rem;
-padding-bottom: 200px;
-}
-.page-header {
-margin-top: -2.3rem;
-
-  max-width: 1200px;
-  display: flex;
-  text-align: center;
-  color: #f9f3f3;
+/* story.css */
+.story-container {
+  background-color: #0b0b0b;
+  color: #fff;
   width: 100%;
-  flex-direction: row;
-  align-content: stretch;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  padding: 40px;
+  margin: 0;
 
 }
 
-.page-title {
+/* Featured Article Styles */
+.featured-article {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 60px;
+  min-height: 360px;
+}
+
+.featured-image-wrapper {
+  flex: 0 0 60%;
+  position: relative;
+  height: 360px;
+  background-color: #1a1a1a;
+}
+
+.featured-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+.featured-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 40px;
+}
+
+.featured-title {
+  text-align: left;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  color: #fff;
+  letter-spacing: -0.5px;
   font-family: "Fjalla One", sans-serif;
 
-  font-size: 4rem;
-
-  font-weight: 600;
-  margin-bottom: 40px;
-  letter-spacing: 4px;
 }
 
-.page-subtitle {
-  color: #fbf9f9;
-  font-size: 16px;
-}
-
-.category-tabs {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 40px;
-}
-
-.category-tab {
-  padding: 8px 16px;
-  border: none;
-  background: none;
-  font-size: 15px;
-  cursor: pointer;
-  position: relative;
-  color: #f9f3f3;
-  transition: color 0.3s ease;
-}
-
-.category-tab::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #8d2121;
-  transition: width 0.3s ease;
-}
-
-.category-tab:hover::after,
-.category-tab.active::after {
-  width: 100%;
-}
-
-.category-tab.active {
-  color: #1710e1;
-  font-weight: 500;
-}
-
-.articles-container {
-  /* max-width: 1200px; */
-  margin: 0 auto;
-  padding: 20px;
-  padding-bottom: 120px;
-
-}
-
-.articles-grid {
+/* Regular Articles */
+.regular-articles {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px;
+  gap: 32px;
+  margin-bottom: 60px;
+  padding: 0 20px;
 }
 
 .article-card {
-  position: relative;
-  cursor: pointer;
+  display: flex;
+  flex-direction: column;
 }
 
 .article-image-wrapper {
+  width: 100%;
+  height: 220px;
+  margin-bottom: 24px;
+  background-color: #1a1a1a;
   position: relative;
-  height: 250px;
-  overflow: hidden;
 }
 
 .article-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.article-card:hover .article-image {
-  transform: scale(1.05);
-}
-
-.article-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  filter: brightness(0.9);
 }
 
 .article-content {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  padding: 20px;
-  width: 100%;
+  padding: 0;
 }
 
-.article-meta {
-  display: flex;
-  flex-direction: column;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-  font-size: 14px;
-  margin-bottom: 8px;
-}
-
-.article-headline {
-  color: white;
+.article-title {
+  text-align: left;
   font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 12px;
-  line-height: 1.4;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #fff;
+  font-family: "Fjalla One", sans-serif;
+
 }
 
 .article-excerpt {
-  margin-bottom: 3rem;
-  color: #f6f1f1;
+  text-align: left;
   font-size: 14px;
-  margin-bottom: 16px;
-  opacity: 1;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 24px;
+  font-weight: 400;
 }
 
-.article-card:hover .article-excerpt {
-  opacity: 1;
-  transform: translateY(0);
-}
-
+/* Read More Button */
 .read-more {
-  display: inline-block;
-  color: rgb(5, 5, 5);
-  font-size: 14px;
-  text-decoration: none;
-  padding: 6px 12px;
-  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: #fff;
+  padding: 10px 24px;
+  font-size: 13px;
+  text-transform: uppercase;
+  cursor: pointer;
   transition: all 0.3s ease;
-  opacity: 1;
-  transform: translateY(10px);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  align-self: flex-start;
 }
 
-.article-card:hover .read-more {
-  opacity: 1;
-  transform: translateY(0);
+.plus-icon {
+  transition: transform 0.3s ease;
+}
+
+.button-text {
+  position: relative;
+}
+
+.button-text::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  transition: width 0.3s ease;
 }
 
 .read-more:hover {
-  background: white;
-  color: black;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+}
+
+.read-more:hover .plus-icon {
+  transform: rotate(90deg);
+}
+
+.read-more:hover .button-text::after {
+  width: 100%;
+}
+
+/* More Story Section */
+.more-story-header{
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px 20px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  /* justify-content: space-between; */
+  transition: opacity 0.3s ease;
+  
+}
+.more-story{
+  text-decoration: none;
+}
+
+.more-story:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.more-story-header h2 {
+  font-family: "Fjalla One", sans-serif;
+
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  color: #fff;
+}
+
+.more-story-header p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .featured-article {
+    gap: 32px;
+  }
+  
+  .featured-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .featured-article {
+    flex-direction: column;
+  }
+
+  .featured-image-wrapper {
+    width: 100%;
+    flex: none;
+  }
+
+  .featured-content {
+    padding-right: 0;
+    padding-top: 24px;
+  }
+
+  .regular-articles {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
-  .articles-grid {
-    grid-template-columns: 1fr;
+  .story-container {
+    padding: 24px;
   }
-  
-  .category-tabs {
-    flex-wrap: wrap;
-    gap: 10px;
+
+  .featured-title {
+    font-size: 28px;
+  }
+
+  .regular-articles {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .article-image-wrapper {
+    height: 200px;
   }
 }
